@@ -16,12 +16,12 @@
         android:inputType="number"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_primary_rectangle"
         android:drawableStart="@drawable/ic_baseline_location"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
         android:drawablePadding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/submitButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,19 @@
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         android:background="@drawable/bg_stroke_rectangle"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editZipCode"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editZipCode" />
+        app:layout_constraintStart_toEndOf="@+id/editZipCode"
+        app:layout_constraintTop_toTopOf="@id/editZipCode"
+        app:layout_constraintBottom_toBottomOf="@id/editZipCode" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editZipCode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_recycler_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
