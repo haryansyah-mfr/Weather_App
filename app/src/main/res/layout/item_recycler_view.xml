@@ -11,13 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:text="70.00°F"
+        android:text="70°F"
         android:textColor="@android:color/white"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/description_view"
         app:layout_constraintTop_toTopOf="@id/description_view"
-        app:layout_constraintBottom_toBottomOf="@id/description_view" />
+        app:layout_constraintBottom_toBottomOf="@id/description_view"/>
 
     <TextView
         android:id="@+id/description_view"
